@@ -2,6 +2,7 @@
   margin: 0px auto;
   padding: 0px;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .cont_principal {
@@ -21,17 +22,38 @@
   box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.5);
 }
 
+.text_1{
+  left: 60%;
+}
+
+.text_2{
+  left: 70%;
+  padding-left: 30px;
+}
+
 .cont_text_modal{
   position: absolute;
   top: 50px;
-  left: 75%;
   text-align: center;
-  color: white;
+  color: $white;
   text-decoration: none;
   list-style-type: none;
+  font-size: 20px;
+  li{
+    padding: 10px;
+  }
 }
 
 a{
   text-decoration: none;
-  color: white;
+  color: $white;
+  &:hover{
+  text-decoration: underline;
+  color: $orange;
+  }
+}
+
+.img{
+  display: block;
+  width: 100%;
 }
